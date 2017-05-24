@@ -20,6 +20,23 @@
    color: #ffffff;
  }
 
+ p.portfolio-text {
+   color: black;
+   text-align: left;
+ }
+
+ p.skills {
+   text-align: left;
+   font-size: 0.8em ;
+   color: black;
+ }
+
+ img.img-portfolio {
+   width:50%;
+   height:50%;
+   display: inline-block; /* is this even right? make sure you check on mobile!!! */
+ }
+
  li.page-scroll {
    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
    font-weight: 400;
