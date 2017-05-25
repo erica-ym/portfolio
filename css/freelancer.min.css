@@ -53,10 +53,10 @@
  hr.thin-line {
    padding:0;
    border:none;
-   border-top:solid 5px;
+   border-top: solid 2.5px;
    text-align:center;
-   max-width:250px;
-   margin:25px auto 30px;
+   max-width: 320px;
+   margin: 20px auto 30px;
  }
  hr.star-light,hr.star-primary{ /* FYI if stuff doesn't show up right on mobile you might have to switch things back to this */
    padding:0;
