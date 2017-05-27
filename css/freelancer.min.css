@@ -169,7 +169,7 @@ h1.name{
 @media (min-width:768px){.navbar-custom{padding:25px 0;-webkit-transition:padding .3s;-moz-transition:padding .3s;transition:padding .3s}
 .navbar-custom .navbar-brand{font-size:2em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.navbar-custom.affix{padding:10px 0}.navbar-custom.affix .navbar-brand{font-size:1.5em}}section{padding:100px 0}section h2{margin:0;font-size:3em}section.success{background:#52BCC7;color:#fff}
 
-@media (max-width:767px){
+@media (max-device-width:667px){
 
   h1.portfolio-title {
     font-family: 'Muli';
