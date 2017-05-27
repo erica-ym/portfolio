@@ -11,7 +11,7 @@
    overflow-x: hidden;
    color: #06141C;
  }
-#signature {
+#written {
   height: 10%;
   width: 10%;
   margin-bottom: 2%;
@@ -183,7 +183,7 @@ h1.name{
     font-size: 2.5em;
   }
 
-  #signature {
+  #written {
     height: 18%;
     width: 18%;
     margin-bottom: 2.4%;
