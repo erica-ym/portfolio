@@ -195,16 +195,18 @@ h1.name{
   }
 
   p.blog-written-text-large {
-    color: #06141C
+    color: #06141C;
+    font-size: 1.5em;
   }
 
   p.blog-written-text-small {
      color: #06141C;
      text-align: justify;
+     font-size: 1.2em;
   }
 
   #blogContent {
-    padding: 8%;
+    padding: 20%;
   }
 
   #written {
