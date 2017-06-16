@@ -195,12 +195,10 @@ h1.name{
   }
 
   p.blog-written-text-large {
-    font-size: 0.8em;
     color: #06141C
   }
 
   p.blog-written-text-small {
-     font-size: 0.5em;
      color: #06141C;
      text-align: justify;
   }
