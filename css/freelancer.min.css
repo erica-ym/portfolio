@@ -77,7 +77,11 @@
    font-weight: 400;
  }
 
- a,a.active,a:active,a:focus,a:hover{
+a {
+  color: #06141C;
+}
+
+a.active,a:active,a:focus,a:hover{
    color:#52BCC7;
  }
 
