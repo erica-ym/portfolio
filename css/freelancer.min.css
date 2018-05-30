@@ -11,6 +11,7 @@
    overflow-x: hidden;
    color: #06141C;
  }
+
 #written {
   height: 10%;
   width: 10%;
@@ -175,7 +176,7 @@ h1.name{
    font-size:4.75em}
 
 @media (min-device-width:768px){
-   header .container{padding-top:200px;padding-bottom:100px}
+   header .container{padding-top:200px;padding-bottom:20 px}
    header .intro-text .name{font-size:4.75em}
    header .intro-text .skills{font-size:1.75em}}.navbar-custom{background:#52BCC7;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;border:none}
    .navbar-custom .navbar-brand, .navbar-custom .navbar-brand.active,.navbar-custom .navbar-brand:active,.navbar-custom .navbar-brand:focus,.navbar-custom .navbar-brand:hover{color:#fff}
@@ -188,7 +189,7 @@ h1.name{
    .navbar-custom .navbar-toggle:focus,.navbar-custom .navbar-toggle:hover{background-color:#52BCC7;color:#fff;border-color:#52BCC7}
 
 @media (min-device-width:768px){.navbar-custom{padding:25px 0;-webkit-transition:padding .3s;-moz-transition:padding .3s;transition:padding .3s}
-.navbar-custom .navbar-brand{font-size:2em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.navbar-custom.affix{padding:10px 0}.navbar-custom.affix .navbar-brand{font-size:1.5em}}section{padding:100px 0}section h2{margin:0;font-size:3em}section.success{background:#52BCC7;color:#fff}
+.navbar-custom .navbar-brand{font-size:2em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.navbar-custom.affix{padding:10px 0}.navbar-custom.affix .navbar-brand{font-size:1.5em}}section{padding:20px 0}section h2{margin:0;font-size:3em}section.success{background:#52BCC7;color:#fff}
 
 @media (max-device-width:667px){
 
@@ -335,9 +336,9 @@ section.first{padding-top:75px}}
   footer .footer-col{margin-bottom:50px}
   footer .footer-below{padding:25px 0;background-color:#0D2C40}
   .btn-outline{
-    color:#fff;
+    color:#09202E;
     font-size:20px;
-    border:2px solid #fff;
+    border:2px solid 09202E;
     background:0 0;
     transition:all .3s ease-in-out;margin-top:15px
     }
@@ -388,7 +389,7 @@ section.first{padding-top:75px}}
     display:inline-block;
     height:50px;
     width:50px;
-    border:2px solid #fff;
+    border:2px solid #09202E;
     border-radius:100%;
     text-align:center;
     font-size:20px;
