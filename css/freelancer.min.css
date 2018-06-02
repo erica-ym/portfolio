@@ -82,6 +82,10 @@ a {
   color: #06141C;
 }
 
+a.intro {
+  text-decoration:underline;
+}
+
 a.active,a:active,a:focus,a:hover{
    color:#52BCC7;
  }
@@ -338,7 +342,7 @@ section.first{padding-top:75px}}
   .btn-outline{
     color:#09202E;
     font-size:20px;
-    border:2px solid 09202E;
+    border:2px solid #09202E;
     background:0 0;
     transition:all .3s ease-in-out;margin-top:15px
     }
