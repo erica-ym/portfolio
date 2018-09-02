@@ -49,6 +49,48 @@
 
 </script>
 
+<!--Simple password validation script for hidden modals-->
+<script>
+function validatePassFare(){
+  var password = prompt('Please enter a password.')
+  if(password == 'palantir'){
+    document.getElementById("portfolioModal10").style.visibility='visible'
+    document.getElementById("portfolioModal10").style.display='block'
+    return true;
+  } else {
+    alert('Sorry, you have entered the wrong value.');
+    document.getElementById("portfolioModal10").style.display='none'
+    document.getElementById("portfolioModal10").style.visibility='hidden'
+    if (password===null) {
+      document.getElementById("portfolioModal10").style.display='none'
+      document.getElementById("portfolioModal10").style.visibility='hidden'
+      return;
+    }
+    validatePassFare()
+    return false;
+  }
+}
+function validatePassHealth(){
+  var password = prompt('Please enter a password.')
+  if(password == 'palantir'){
+    document.getElementById("portfolioModal9").style.visibility='visible'
+    document.getElementById("portfolioModal9").style.display='block'
+    return true;
+  } else {
+    alert('Sorry, you have entered the wrong value.');
+    document.getElementById("portfolioModal9").style.visibility='hidden'
+    document.getElementById("portfolioModal9").style.display='none'
+    if (password===null) {
+      document.getElementById("portfolioModal9").style.visibility='hidden'
+      document.getElementById("portfolioModal9").style.display='none'
+      return;
+    }
+    validatePassHealth()
+    return false;
+  }
+}
+</script>
+
 
 <body id="page-top" class="index">
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
@@ -161,7 +203,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="???" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal10" onclick="javascript:return validatePassFare()" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="glyphicon glyphicon-plus"></i>
@@ -179,7 +221,7 @@
                 <!--Second projects row-->
                 <div class="row">
                   <div class="col-sm-4 portfolio-item">
-                      <a href="???" class="portfolio-link" data-toggle="modal">
+                      <a href="#portfolioModal9" onclick="javascript:return validatePassHealth()" class="portfolio-link" data-toggle="modal">
                           <div class="caption">
                               <div class="caption-content">
                                   <i class="glyphicon glyphicon-plus"></i>
@@ -188,8 +230,8 @@
                           <img src="img/portfolio/thumbnail-10.png" class="img-responsive" alt="Health AI projects">
                       </a>
                       <div class="row text-center">
-                        <h4>Health AI work at Deloitte</h4>
-                        <span>Visual designer for Omnia AI practice in health care team</span>
+                        <h4>Health AI Brochures</h4>
+                        <span>Visual & information designer for Omnia AI practice in health care team</span>
                       </div>
                   </div>
                   <div class="col-sm-4 portfolio-item">
@@ -808,6 +850,78 @@ Check out our <a class="intro" href="https://devpost.com/software/id-2-pluralize
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Health AI</h2>
+                            <hr class="thin-line">
+                            <p class="portfolio-text">At my previous summer internship at Deloitte, I took a visual and information design role within the Omnia AI practice for the health team. Over four months, I designed 7 different brochures used in client engagements for large retail and pharma companies. My role included collecting information from whitepapers, writing copy, gathering and creating visual assets, and designing brochure layouts with InDesign. Included below are three brochure samples with lorem ipsum copy. </p>
+                            <img style="width:100%" src=img/graphics/healthAI/brochure1.png class="img-responsive img-portfolio">
+                            <img style="width:100%" src=img/graphics/healthAI/brochure2.png class="img-responsive img-portfolio">
+                            <img style="width:100%" src=img/graphics/healthAI/brochure3.png class="img-responsive img-portfolio">
+                            <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Fa.re</h2>
+                            <hr class="thin-line">
+                            <p class="portfolio-text">As part of my previous summer internship at Deloitte, I participated in an internal product development innovation team called the Hackery. Our task was to build out a technically feasible product in the retail analytics space using facial recognition.
+                              Working with a team of 7 engineers, I had many opportunities to steer product direction and bring a people-focused perspective to the team.
+
+                              <br><br>I spent half of my time on the development side, working on building our server, database structure, and GraphQL integration. The remainder of my time was spent as a designer conducting research, building our user-facing dashboard, and creating the slide deck used to communicate product goals.
+
+                              <br><br>I spearheaded a user research effort by talking to 15 retail and technology consultants within the firm who worked closely with users and several grocery and lifestyle retail clients. This research helped me redefine the product we were building and determine the best way to produce a working proof-of-concept product.
+
+                              <br><br>Below are several screenshots of our functional dashboard, including a user login page and topline metrics each with further data visualizations.
+</p>
+                            <img style="width:100%" src=img/graphics/fare/dashboard4.png class="img-responsive img-portfolio">
+                            <img style="width:100%" src=img/graphics/fare/dashboard1.png class="img-responsive img-portfolio">
+                            <img style="width:100%" src=img/graphics/fare/dashboard2.png class="img-responsive img-portfolio">
+                            <img style="width:100%" src=img/graphics/fare/dashboard3.png class="img-responsive img-portfolio">
+                            <p class="portfolio-text">Designing our logo, I originally created curves and circles as an abstraction of an optical illusion of vase and face together. Our team wanted a simpler, cleaner logo, so I opted for a clean, sans-serif with dots placed to invoke the idea of a face in a playful manner. </p>
+                            <img style="width:100%" src=img/graphics/fare/logodesign.png class="img-responsive img-portfolio">
+                            <img style="width:100%" src=img/graphics/fare/slide1.png class="img-responsive img-portfolio">
+                            <p class="portfolio-text">These slides were part of a larger presentation used to present to internal and external stakeholders to obtain feedback about our proof of concept and build a team to push it forwards. </p>
+                            <img style="width:100%" src=img/graphics/fare/slide2.png class="img-responsive img-portfolio">
+                            <img style="width:100%" src=img/graphics/fare/slide3.png class="img-responsive img-portfolio">
+                            <img style="width:100%" src=img/graphics/fare/slide4.png class="img-responsive img-portfolio">
+                            <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
