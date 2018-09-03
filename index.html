@@ -57,18 +57,19 @@ function validatePassFare(){
     document.getElementById("portfolioModal10").style.visibility='visible'
     document.getElementById("portfolioModal10").style.display='block'
     return true;
+  } else if (password === null) {
+    document.getElementById("portfolioModal10").style.display='none'
+    document.getElementById("portfolioModal10").style.visibility='hidden'
+    return false;
   } else {
     alert('Sorry, you have entered the wrong value.');
     document.getElementById("portfolioModal10").style.display='none'
     document.getElementById("portfolioModal10").style.visibility='hidden'
-    if (password===null) {
-      document.getElementById("portfolioModal10").style.display='none'
-      document.getElementById("portfolioModal10").style.visibility='hidden'
-      return;
-    }
+    document.querySelector("body").style.overflow= 'visible !important';
     validatePassFare()
     return false;
   }
+
 }
 function validatePassHealth(){
   var password = prompt('Please enter a password.')
@@ -76,15 +77,14 @@ function validatePassHealth(){
     document.getElementById("portfolioModal9").style.visibility='visible'
     document.getElementById("portfolioModal9").style.display='block'
     return true;
-  } else {
+  } else if (password === null) {
+    document.getElementById("portfolioModal9").style.visibility='hidden'
+    document.getElementById("portfolioModal9").style.display='none'
+    return false
+  }else {
     alert('Sorry, you have entered the wrong value.');
     document.getElementById("portfolioModal9").style.visibility='hidden'
     document.getElementById("portfolioModal9").style.display='none'
-    if (password===null) {
-      document.getElementById("portfolioModal9").style.visibility='hidden'
-      document.getElementById("portfolioModal9").style.display='none'
-      return;
-    }
     validatePassHealth()
     return false;
   }
@@ -627,34 +627,6 @@ function validatePassHealth(){
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Brightspark - Educational Tour Leader</h2>
-                            <hr class="thin-line">
-                            <p class="portfolio-text">
-                              <br>-Led 15 inter-provincial tours for groups of 50 to 150 students, organizing logistics and delivering educational content.
-                              <br>-Awarded 4.5 out of 5 stars by clients, resulted in being sought out by management to lead additional tours.
-                              <br>-Delivered tours in Ottawa, Montreal, Quebec City, Toronto, Halifax, Moncton
-                            </p>
-                            <div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -686,7 +658,6 @@ function validatePassHealth(){
                               throughout the year, but I consistently used the same fonts and similar textures to achieve unity while making exciting, varied graphics. </p>
                             <img src=img/graphics/Nspire/cfair1.png class="img-responsive img-portfolio" alt="Career Fair Cover Photo">
                             <img src=img/graphics/Nspire/cfair2.png class="img-responsive img-portfolio" alt="Career Fair Sponsors">
-                            <img src=img/graphics/Nspire/cfair3.png class="img-responsive img-portfolio" alt="Career Fair Snapchat">
                             <img src=img/graphics/Nspire/cfair4.png class="img-responsive img-portfolio" alt="Rogers Cover Photo">
                             <img src=img/graphics/Nspire/cfair5.png class="img-responsive img-portfolio" alt="Rogers Promotional">
                             <p class="portfolio-text"> I also helped reboot our Instagram page and made several Snapchat filters for our national conference. </p>
@@ -780,11 +751,11 @@ function validatePassHealth(){
                           <img src=img/graphics/VHacks/team.jpg class="img-responsive img-portfolio">
 
                           <p class="portfolio-text">
-                            My team came from five different continents, universities, and backgrounds, and we were assigned to interfaith dialogue. As my team’s designer, my role included directing team ideation, defining our product’s features, building our brand assets and pitch deck, getting feedback from team mentors, building our front-end website, and writing our devpost project submissions.
+                            My team came from five different continents, universities, and backgrounds, and we were assigned to a group to tackle interfaith dialogue. As my team’s designer, my role included directing team ideation, defining our product’s features, building our brand assets and pitch deck, getting feedback from team mentors, building our front-end website, and writing our devpost project submissions.
 
-<br><br>Tackling the challenge of interfaith dialogue isn’t easy – how do you get people whose religious identities are explicitly defined to understand ways of living in another religion?
+<br><br>Tackling the challenge of interfaith dialogue isn’t easy – how do you get people to tolerate and understand other people's religious beliefs?
 
-<br><br> Our team spent the first night of the hackathon running through a rapid-fire design thinking process, trying to find a root problem we could tackle with technology that we could build and demonstrate in a weekend. We were aided by a huge collection of mentors from a variety of disciplines – a rabbi who ran cross-religious community events in the West Bank, social impact lawyers, Silicon Valley technologists. As we connected with mentors, I continued to note down key points and sketch our potential prototypes. By the end of the weekend, I covered 50 pages with learnings and our thought process.
+<br><br> Our team spent the first night of the hackathon running through a rapid-fire design thinking process, trying to find a root problem we could tackle with technology that we could build and demonstrate in a weekend. We were aided by a collection of mentors from a variety of disciplines – a rabbi who ran cross-religious community events in the West Bank, social impact lawyers, Silicon Valley technologists. As we connected with mentors, I continued to note down key points and sketch our potential prototypes.
                            </p>
                            <img src=img/graphics/VHacks/logo.png class="img-responsive img-portfolio">
                            <img src=img/graphics/VHacks/logofinal.png class="img-responsive img-portfolio">
